@@ -1,5 +1,10 @@
 header {
     padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(10, 87, 10);
     color: white;
@@ -11,16 +16,23 @@ header .park-finder {
 }
 
 footer {
-    margin: 1px;
+    /* margin: 1px;
+    margin-top: -180px;
+    height: 180px; */
     text-align: center;
     background-color: rgb(10, 87, 10);
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 .search {
     padding: 80px;
     text-align: center;
+    display: flex;
     
 }
 
@@ -30,4 +42,5 @@ footer {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
 }

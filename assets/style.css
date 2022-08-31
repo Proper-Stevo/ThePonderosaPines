@@ -1,3 +1,10 @@
+body {
+    /* padding-top: 88px; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
 header {
     padding: 20px;
     position: fixed;
@@ -29,12 +36,12 @@ footer {
     left: 0;
 }
 
-.search {
+/* .search {
     padding: 80px;
     text-align: center;
     display: flex;
     
-}
+} */
 
 #myVideo {
     position: fixed;

@@ -1,5 +1,4 @@
 body {
-    /* padding-top: 88px; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -21,27 +20,29 @@ header {
 header .park-finder {
     color: rgb(203, 203, 130);
 }
-
-footer {
-    /* margin: 1px;
-    margin-top: -180px;
-    height: 180px; */
-    text-align: center;
-    background-color: rgb(10, 87, 10);
-    color: white;
-    /* padding: 20px; */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
-
-/* .search {
-    padding: 80px;
-    text-align: center;
-    display: flex;
+#display{
+    display:flex;
+    justify-content: center;
     
-} */
+}
+/* added class for new divs */
+.div{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+#inpt{
+    line-height: 30px;
+    background-color: white;  
+}
+button.btn {
+    color:black;
+    background-color: white;
+}
+/* added hover color to search button */
+button.btn:hover{
+    background-color:rgb(203, 203, 130);
+}
 
 #myVideo {
     position: fixed;
@@ -51,3 +52,19 @@ footer {
     min-height: 100%;
     z-index: -1;
 }
+
+
+footer {
+   
+    text-align: center;
+    background-color: rgb(10, 87, 10);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+

@@ -13,9 +13,15 @@
         <h1>National <span class="park-finder">Park Finder</span></h1>
     </header>
 
-    <div class="mx-auto" style="width: 200px;">
-        <input type="text" placeholder="search">
-        <button type="submit" class="btn">Submit</button> 
+    <div class="mx-auto" id="display" style="width: 200px;">
+        <!-- added div and class-->
+        <div class="div">
+            <input type="text" id="inpt" placeholder="which national park?">
+        </div>
+        <!-- added div and class -->
+        <div class="div">
+        <button type="submit" id="searchBtn"  class="btn">Search</button> 
+        </div>
         <video autoplay muted loop id="myVideo">
             <source src="./Pexels Videos 1448735 (1).mp4" type="video/mp4">
         </video>
@@ -27,6 +33,6 @@
     </footer>
 </body>
 
-<link rel="stylesheet" href="./assets/script.js">
+<script src="./assets/script.js"></script>
 
 </html>

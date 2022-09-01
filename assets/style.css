@@ -46,10 +46,14 @@ button.btn:hover{
 
 .description {
     /* insert styling */
+    font-size: small;
 }
 
 .image {
     /* insert styling */
+    width: 200px;
+    height: 200px;
+    justify-content: space-around;
 }
 
 .operating {

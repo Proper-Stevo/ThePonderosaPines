@@ -1,6 +1,9 @@
 var input = document.querySelector('#inpt');
 var button = document.querySelector('#searchBtn');
 
+var header = document.querySelector('.project-header');
+var footer = document.querySelector('footer');
+
 var apiKey = '60tnQ2dzLAkLf73fsvhdfvhec1KAxFeawuS3TRTS';
 
 // 1st page, 2nd page
@@ -14,6 +17,8 @@ function searchBar(event){
 // INPUT AND SEARCH BUTTON DISAPPEAR WHEN CLICKED
     input.style.display= "none";
     button.style.display= "none";
+    header.style.display= "none";
+    footer.style.display= "none";
 
     var apiurl = `https://developer.nps.gov/api/v1/parks?q=${input.value}&api_key=${apiKey}`; 
 

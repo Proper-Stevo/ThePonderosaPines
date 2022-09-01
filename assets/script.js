@@ -30,11 +30,24 @@ fetch(apiurl)
 .then(function(data){
     console.log(data)
     var h1El = document.createElement("h1")
+    var h2El = document.createElement("h2")
+    var imageEl = document.createElement("img")
+    var pEl = document.createElement("p")
+
+
+    imageEl.setAttribute("src", data.data[0].images[0].url)
+    imageEl.setAttribute("class", "image")
+    box.append(imageEl)
 
     h1El.textContent=data.data[0].description
-    h1El.style.color = "green"
+    h1El.style.color = "white"
     h1El.style.margin = "20px"
     box.append(h1El)
+   
+    pEl.textContent=data.data[0].operatingHours[0].description
+    pEl.setAttribute("class", "operating")
+    box.append(pEl)
+   
     var contacts = data.data
     for(var i = 0; i < contacts.length; i++){
         var h2El = document.createElement("h2")

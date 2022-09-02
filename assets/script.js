@@ -17,8 +17,9 @@ function searchBar(event){
 // INPUT AND SEARCH BUTTON DISAPPEAR WHEN CLICKED
     input.style.display= "none";
     button.style.display= "none";
-    header.style.display= "none";
+    // header.style.display= "none";
     footer.style.display= "none";
+    
 
     var apiurl = `https://developer.nps.gov/api/v1/parks?q=${input.value}&api_key=${apiKey}`; 
 
@@ -28,7 +29,7 @@ fetch(apiurl)
     return response.json()
 })
 .then(function(data){
-    console.log(data)
+    console.log(data.data[0])
     var h1El = document.createElement("h1")
     var h2El = document.createElement("h2")
     var imageEl = document.createElement("img")
@@ -49,19 +50,14 @@ fetch(apiurl)
     box.append(pEl)
    
     var contacts = data.data
-    for(var i = 0; i < contacts.length; i++){
+    for(var i = 0; i < 1; i++){
         var h2El = document.createElement("h2")
         h2El.textContent = contacts[i].description
         h2El.setAttribute("class", "description")
         box.append(h2El)
-}
+
+    }
 })
 }
-// input form event listeners/functions
-
-// fetch api
-// results
-
-// divs
 
 button.addEventListener('click', searchBar);

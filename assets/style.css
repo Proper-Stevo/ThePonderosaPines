@@ -46,10 +46,13 @@ button.btn:hover{
 
 .description {
     /* insert styling */
+    font-size: small;
 }
 
 .image {
-    /* insert styling */
+    /* insert styling */width: 200px;
+    height: 200px;
+    display: block;
 }
 
 .operating {

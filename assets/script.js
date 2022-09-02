@@ -3,7 +3,12 @@ var button = document.querySelector('#searchBtn');
 
 var apiKey = '60tnQ2dzLAkLf73fsvhdfvhec1KAxFeawuS3TRTS';
 
-
+var findweather = () => {
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid=e5802abdcd0d7206f1acd96df13f647a')
+    .then(data => data.json())
+    .then((data) => console.log(data))
+};
+findweather;
 
 var box = document.querySelector(".box")
 var box2 = $(".box")

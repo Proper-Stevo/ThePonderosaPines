@@ -46,14 +46,48 @@ button.btn:hover{
 
 .description {
     /* insert styling */
+    /* display: flex;
+    flex-direction: column;
+    background-color: #0d6e2f;
+    border-radius: 10px;
+    height: 200px !important;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 1px rgba(0, 0, 0, 0.19); */
 }
 
 .image {
     /* insert styling */
+    display: flex;
+    flex-direction: column;
+    background-color: #0d6e2f;
+    border-radius: 10px;
+    height: 200px !important;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 1px rgba(0, 0, 0, 0.19);
+}
+
+.h1 {
+    /* background-color: #0d6e2f;
+    border-radius: 10px;
+    height: 200px !important;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 1px rgba(0, 0, 0, 0.19); */
 }
 
 .operating {
     /* insert styling */
+    /* display: flex;
+    flex-direction: column;
+    background-color: #0d6e2f;
+    border-radius: 10px;
+    height: 200px !important;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 1px rgba(0, 0, 0, 0.19); */
+;
 }
 
 #myVideo {

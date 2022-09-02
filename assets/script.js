@@ -1,5 +1,7 @@
 var input = document.querySelector('#inpt');
 var button = document.querySelector('#searchBtn');
+var header = document.querySelector('.project-header');
+var footer = document.querySelector('footer');
 
 var apiKey = '60tnQ2dzLAkLf73fsvhdfvhec1KAxFeawuS3TRTS';
 
@@ -14,6 +16,8 @@ function searchBar(event){
     console.log(input.value);
     input.style.display= "none";
     button.style.display= "none";
+    header.style.display= "none";
+    footer.style.display= "none";
 
     var apiurl = `https://developer.nps.gov/api/v1/parks?q=${input.value}&api_key=${apiKey}`;
     // var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}=${input.value}&weather_key=${weatherKey}';

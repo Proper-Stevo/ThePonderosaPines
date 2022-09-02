@@ -44,6 +44,18 @@ button.btn:hover{
     background-color:rgb(203, 203, 130);
 }
 
+.description {
+    /* insert styling */
+}
+
+.image {
+    /* insert styling */
+}
+
+.operating {
+    /* insert styling */
+}
+
 #myVideo {
     position: fixed;
     right: 0;

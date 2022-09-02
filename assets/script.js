@@ -10,7 +10,7 @@ var weatherKey = 'a92be1494d3c0baec600da80d7ff753c';
 //this function will call the longitude and latitude from the Parks API and will convert it to our Weather APi. 
 // we have to fix the url (see line 15) 
 function getWeather(lat, lon) {
-    var weatherUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=cfe0b2658aec5af16bf8115cfd986eca';
+    var weatherUrl = 'https://api.openweathermap.org/data/2.5/onecall?' + lat + ' & ' + lon + '&exclude=hourly,daily&appid=cfe0b2658aec5af16bf8115cfd986eca';
     //cfe0b2658aec5af16bf8115cfd986eca
     // ' +lat, + lon 'api key'
 }
@@ -29,11 +29,11 @@ function searchBar(event){
     footer.style.display= "none";
 
     // this function will fetch the data from the Parks API and from here we will call it
-    function getPark {
+    function getPark() {
     var apiurl = `https://developer.nps.gov/api/v1/parks?q=${input.value}&api_key=${apiKey}`;
-    var lat = data.[latitude]; // here im trying to call the latitude from the API 
+    var lat = data.data[latitude]; // here im trying to call the latitude from the API 
     console.log(lat);
-    var lon =
+    // var lon =
 
 fetch(apiurl)
 .then(function(response){
@@ -72,6 +72,7 @@ fetch(apiurl)
         box.append(h2El)
 
         //here we basicall call the function so both functions work properly and they intertwine
+        getPark();
         getWeather(lat, lon);
 }
 

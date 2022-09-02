@@ -70,6 +70,7 @@ button.btn:hover{
     background: #6e995d80;;
     color: white;
     text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     border: solid;
     border-color: rgb(203, 203, 130);
 
@@ -108,6 +109,7 @@ button.btn:hover{
     text-align: center;
     border: solid;
     border-color: rgb(203, 203, 130);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     /* insert styling */
     /* display: flex;
     flex-direction: column;

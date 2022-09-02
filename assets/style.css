@@ -45,20 +45,20 @@ button.btn:hover{
 }
 
 .description {
+    font-size: 20px;
     /* insert styling */
-    font-size: small;
 }
 
 .image {
-    /* insert styling */width: 200px;
-    height: 200px;
     display: block;
+    height: 500px;
+    width: 500px;
 }
 
 .operating {
+    font-size: 20px;
     /* insert styling */
 }
-
 
 #myVideo {
     position: fixed;

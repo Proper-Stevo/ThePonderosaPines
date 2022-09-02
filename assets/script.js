@@ -5,7 +5,16 @@ var footer = document.querySelector('footer');
 
 var apiKey = '60tnQ2dzLAkLf73fsvhdfvhec1KAxFeawuS3TRTS';
 
-var weatherKey = 'eee36fb31545951ee6937b387f4442d1';
+var weatherKey = 'a92be1494d3c0baec600da80d7ff753c';
+
+//this function will call the longitude and latitude from the Parks API and will convert it to our Weather APi. 
+// we have to fix the url (see line 15) 
+function getWeather(lat, lon) {
+    var weatherUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=cfe0b2658aec5af16bf8115cfd986eca';
+    //cfe0b2658aec5af16bf8115cfd986eca
+    // ' +lat, + lon 'api key'
+}
+
 
 var box = document.querySelector(".box")
 var box2 = $(".box")
@@ -19,8 +28,12 @@ function searchBar(event){
     header.style.display= "none";
     footer.style.display= "none";
 
+    // this function will fetch the data from the Parks API and from here we will call it
+    function getPark {
     var apiurl = `https://developer.nps.gov/api/v1/parks?q=${input.value}&api_key=${apiKey}`;
-    // var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}=${input.value}&weather_key=${weatherKey}';
+    var lat = data.[latitude]; // here im trying to call the latitude from the API 
+    console.log(lat);
+    var lon =
 
 fetch(apiurl)
 .then(function(response){
@@ -58,10 +71,12 @@ fetch(apiurl)
         h2El.setAttribute("class", "description")
         box.append(h2El)
 
-        
+        //here we basicall call the function so both functions work properly and they intertwine
+        getWeather(lat, lon);
 }
 
 })
+    }
 }
 // input form event listeners/functions
 // function getWeather(city){
@@ -107,7 +122,7 @@ fetch(apiurl)
 //                   } else if (uv < 11) { 
 //                     $("#uvIndex").removeClass()
 //                     $("#uvIndex").addClass("new badge red")
-//                   }
+//                 ;  }
 //               });
 //             } 
 // fetch api

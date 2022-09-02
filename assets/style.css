@@ -40,11 +40,11 @@ header .park-finder {
     
 }
 /* added class for new divs */
-.div{
+/* .div{ */
     /* padding-left: 5px;
     padding-right: 5px; */
 
-}
+/* } */
 #inpt{
     line-height: 30px;
     background-color: white;  
@@ -88,14 +88,14 @@ button.btn:hover{
     /* border-radius: 50%; */
 }
 
-.h1 {
+/* .h1 { */
     /* background-color: #0d6e2f;
     border-radius: 10px;
     height: 200px !important;
     width: auto;
     overflow: hidden;
     box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 1px rgba(0, 0, 0, 0.19); */
-}
+/* } */
 
 .operating {
 

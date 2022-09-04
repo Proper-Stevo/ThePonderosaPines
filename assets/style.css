@@ -39,11 +39,11 @@ header .park-finder {
     
 }
 /* added class for new divs */
-/* .div{
-    padding-left: 5px;
-    padding-right: 5px;
+.div{
+    /* padding-left: 5px;
+    padding-right: 5px; */
 
-} */
+} 
 #inpt{
     line-height: 30px;
     background-color: white;  

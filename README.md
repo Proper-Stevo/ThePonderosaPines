@@ -35,3 +35,10 @@ SOFTWARE.
 
 ---
 ## Images.
+![alt text] (https://github.com/Proper-Stevo/ThePonderosaPines/blob/SB-feat/js/Screenshot%202022-09-06%20at%2012.25.49%20PM.png)
+
+## Profile Information
+
+https://github.com/Proper-Stevo/ThePonderosaPines
+
+https://proper-stevo.github.io/ThePonderosaPines/
